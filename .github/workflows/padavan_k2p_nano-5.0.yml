@@ -1,6 +1,7 @@
 name: Build padavan k2p_nano-5.0
 on:
-  issue_comment: created
+  issue_comment:
+    types: [created, deleted]
 jobs:
   build:
     runs-on: ubuntu-latest
