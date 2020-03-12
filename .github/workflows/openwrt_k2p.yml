@@ -46,7 +46,8 @@ jobs:
     - name: Clone source code
       run: |
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
-        cd openwrt echo "src-git mtk https://github.com/Nossiac/mtk-openwrt-feeds" >> feeds.conf.default
+        cd openwrt
+        echo "src-git mtk https://github.com/Nossiac/mtk-openwrt-feeds" >> feeds.conf.default
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
