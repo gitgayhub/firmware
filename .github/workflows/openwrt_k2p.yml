@@ -7,7 +7,7 @@ on:
     branches:
       - master
     paths:
-      - 'k2p.config'
+      - 'k2p_19.07.2.config'
 #  schedule:
 #    - cron: 0 8 * * 5
   watch:
@@ -16,7 +16,7 @@ on:
 env:
   REPO_URL: https://github.com/openwrt/openwrt.git
   REPO_BRANCH: master
-  CONFIG_FILE: k2p.config
+  CONFIG_FILE: k2p_19.07.2.config
   DIY_SH: diy.sh
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
