@@ -21,6 +21,7 @@ jobs:
         tar -xvf mipsel-linux-uclibc.tar.xz -C toolchain-3.4.x
     - name: Load custom configuration
       run: |
+        [ -e files ]
         [ -e RM2100_modified.config ] && mv RM2100_modified.config /opt/rt-n56u/trunk/configs/templates/
     - name: Build
       run: |
