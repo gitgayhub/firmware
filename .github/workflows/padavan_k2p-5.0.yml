@@ -1,7 +1,7 @@
 name: Build padavan k2p_5.0
 on:
-  issue_comment: 
-    types: [created, deleted]
+#  issue_comment: 
+#    types: [created, deleted]
 jobs:
   build:
     runs-on: ubuntu-latest
